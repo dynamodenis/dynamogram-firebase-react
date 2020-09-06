@@ -1,7 +1,7 @@
 import React, { Fragment,useState } from 'react'
 import {Link, withRouter, Redirect} from 'react-router-dom'
 import Title from '../Navbar/Title'
-import { login, logout, getCurrentUser} from '../../hooks/useAuth'
+import { login, logout, getCurrentUser, signInWithGoogle} from '../../hooks/useAuth'
 
 function SignIn(props) {
 
@@ -34,11 +34,8 @@ function SignIn(props) {
         
     }
 
-    // if(!getCurrentUser()){
-    //     console.log("User is unauthenticated!")
-    //     props.history.replace("/login")
-    //     return null
-    //   }
+
+
     return (
         
         <Fragment>
@@ -66,5 +63,6 @@ function SignIn(props) {
         </Fragment>
     )
 }
+
 
 export default withRouter(SignIn) 

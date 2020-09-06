@@ -13,6 +13,8 @@ import SignUp from './comps/auth/SignUp';
 import {isInitialized } from './hooks/useAuth'
 import PrivateRoute from './comps/auth/PrivateRoute';
 
+
+
 function App() {
 
   //  Check if firebase is loaded or still loading

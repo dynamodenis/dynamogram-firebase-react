@@ -84,7 +84,7 @@ label:hover{
   padding: 50% 0;
   /* padding controls height, will always be perfectly square regardless of width */
   position: relative;
-  opacity: 0.8;
+  opacity: 1;
 }
 .img-wrap img{
   min-width: 100%;
@@ -104,7 +104,7 @@ label:hover{
   height: 100%;
   background: rgba(0,0,0,0.5);
 }
-.backdrop img{
+.modal-image{
   display: block;
   max-width: 60%;
   max-height: 80%;
@@ -123,6 +123,7 @@ label:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--primary)
 }
 
 

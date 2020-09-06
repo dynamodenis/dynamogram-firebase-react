@@ -23,4 +23,5 @@ var firebaseConfig = {
   const timeStamp= firebase.firestore.FieldValue.serverTimestamp;
 
 
-  export {projectFirestore, projectStorage,projectAuth,  timeStamp}
+
+  export {projectFirestore, projectStorage,projectAuth, timeStamp}

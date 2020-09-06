@@ -3,12 +3,13 @@ import Title from '../Navbar/Title'
 import UploadForm from '../UploadForm'
 import ImageGrid from '../ImageGrid'
 import Modal from '../Modal'
-
+import NewModal from '../NewModal'
 
 
 function Dashboard() {
     // Get the state of the image to pass it in the modal
     const [selectedImg, setSelectedImg] = useState(null)
+    console.log(selectedImg)
 
     return (
         <Fragment>

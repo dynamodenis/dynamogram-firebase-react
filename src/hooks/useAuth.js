@@ -1,4 +1,7 @@
-import {projectFirestore, projectAuth} from '../firebase/config'
+import {projectFirestore, projectAuth, googleProvider} from '../firebase/config'
+import { Redirect } from 'react-router-dom'
+import React from 'react'
+
 
 // Login authentication
 export const login = (email, password) =>{
@@ -9,6 +12,11 @@ export const login = (email, password) =>{
 export const logout = () =>{
     return projectAuth.signOut()
 }
+
+
+
+
+  
 
 // Register the user
 export const register = async (email, password) =>{

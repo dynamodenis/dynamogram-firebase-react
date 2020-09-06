@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import {Link, withRouter, Redirect} from 'react-router-dom'
 import Title from '../Navbar/Title'
-import { register, addUserDetails, getCurrentUser} from '../../hooks/useAuth'
+import { register, addUserDetails, getCurrentUser, signInWithGoogle} from '../../hooks/useAuth'
 
 
 function SignUp(props) {
@@ -39,13 +39,9 @@ function SignUp(props) {
             
         }catch(error){
             setError(error.message)
+
         }
     }
-
-    // if a user is authenticated redirect to dashboard
-    // if (getCurrentUser){
-    //     return <Redirect to="/"/>
-    // }
 
     return (
         <Fragment>
@@ -77,6 +73,7 @@ function SignUp(props) {
                         </div>
                         <p className="text-muted text-small">Already have an account? <Link to="/login">Login</Link></p>
                     </form>
+        
                 </div>
             </Fragment>
     )
